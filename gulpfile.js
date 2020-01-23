@@ -1,17 +1,12 @@
 const gulp = require('gulp');
-const babel = require('gulp-babel');
-const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const compass = require('gulp-compass');
 const cleanCSS = require('gulp-clean-css');
-
 const rollup = require('gulp-better-rollup');
 const babelRollUp = require('rollup-plugin-babel');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
-
-
 const size = require('gulp-filesize');
 const plumber = require('gulp-plumber');
 const vueCompiler = require('gulp-vue-compiler');
