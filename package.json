@@ -1,0 +1,51 @@
+{
+  "name": "speqta-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-ruby-sass": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.1",
+    "gulp-vue-compiler": "^1.0.0-beta.1",
+    "node-sass": "^4.11.0",
+    "rollup": "^1.27.8",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "@sweetalert2/themes": "^3.1.0",
+    "compass": "^0.1.1",
+    "compass-mixins": "^0.12.10",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "latest",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "4.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "vue": "^2.6.11",
+    "vue-good-table": "^2.18.1",
+    "vue-sweetalert2": "^2.0.5"
+  }
+}

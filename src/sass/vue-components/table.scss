@@ -1,0 +1,38 @@
+.table-container {
+  max-width: 500px;
+  min-height: 340px;
+  margin: auto;
+}
+
+.table-wrapper {
+  min-height: 340px;
+}
+
+.table {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $color-white;
+  table-layout: auto;
+  border: 1px solid $color-darkgray;
+}
+
+.table__row {
+  cursor: pointer;
+  transition: background-color .5s ease;
+}
+
+.table__body .table__row:hover {
+  background-color: $color-antiquewhite;
+}
+
+.table__header th {
+  border: 1px solid $color-darkgray;
+  padding: 4px;
+}
+
+.table td {
+  border: 1px solid $color-darkgray;
+  padding: 0.25em 0.5em;
+  color: $color-lightblue;
+}
