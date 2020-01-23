@@ -25,15 +25,16 @@
       <nav class="pagination">
         <ul class="pagination__list">
           <li class="pagination__item">
-            <button type="button" class="pagination__link" v-if="currentPage != 1" @click="currentPage--"> Previous </button>
+            <button type="button" class="pagination__link" :disabled="currentPage === 1" @click="currentPage--"> Previous </button>
           </li>
           <li class="pagination__item">
             <button type="button" class="pagination__link"
+                    :class="{'pagination__link--active' : pageNumber === currentPage}"
                     v-for="pageNumber in pages"
                     @click="currentPage = pageNumber"> {{pageNumber}} </button>
           </li>
           <li class="pagination__item">
-            <button type="button" @click="currentPage++" v-if="currentPage < pages.length" class="pagination__link"> Next </button>
+            <button type="button" @click="currentPage++" :disabled="currentPage >= pages.length" class="pagination__link"> Next </button>
           </li>
         </ul>
       </nav>

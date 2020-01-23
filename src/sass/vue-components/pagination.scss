@@ -6,6 +6,8 @@
   width: 100%;
   display: flex;
   list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .pagination__item {
@@ -15,4 +17,9 @@
 .pagination__link {
   margin: 0 8px;
   padding: 8px 16px;
+  outline: none;
+}
+
+.pagination__link--active {
+  background: $color-lightblue;
 }
