@@ -51,7 +51,7 @@ gulp.task('scripts-vue', () => {
  - SASS -
  **********************************************/
 gulp.task('sass', () => {
-  return gulp.src([ './src/sass//*.scss' ])
+  return gulp.src([ './src/sass/*.scss' ])
     .pipe(plumber())
     .pipe(compass({
       css: './src/css',
