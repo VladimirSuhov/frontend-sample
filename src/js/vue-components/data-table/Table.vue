@@ -29,9 +29,10 @@
           </li>
           <li class="pagination__item">
             <button type="button" class="pagination__link"
-                    :class="{'pagination__link--active' : pageNumber === currentPage}"
-                    v-for="pageNumber in pages"
-                    @click="currentPage = pageNumber"> {{pageNumber}} </button>
+                    :class="{ 'pagination__link--active' : pageNumber === currentPage }"
+                    v-for="(pageNumber, index) in pages"
+                    :key="index"
+                    @click="currentPage = pageNumber"> {{ pageNumber }} </button>
           </li>
           <li class="pagination__item">
             <button type="button" @click="currentPage++" :disabled="currentPage >= pages.length" class="pagination__link"> Next </button>
@@ -43,7 +44,7 @@
 </template>
 
 <script>
-  import Swal from "sweetalert2";
+  import Swal from 'sweetalert2';
 
   export default {
     name: 'data-table',
@@ -250,7 +251,7 @@
 
       showIfoModal(data) {
         Swal.fire({
-          type: "success",
+          type: 'success',
           showCloseButton: false,
           allowOutsideClick:false,
           html: `
