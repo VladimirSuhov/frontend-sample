@@ -53,7 +53,7 @@ gulp.task('sass', () => {
       sass: './src/sass',
     }))
     .pipe(autoprefixer({
-      browsers: [ 'last 2 versions' ]
+      overrideBrowserslist: [ 'last 2 versions' ]
     }))
     .pipe(cleanCSS({ debug: true, level: { 1: { specialComments: false } } }))
     .pipe(gulp.dest('./dist/css'))
